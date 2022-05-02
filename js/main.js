@@ -347,15 +347,15 @@
 
      /* Recomendations */
 
-     (function authSuccess() {
-        var recos_element = $("#recos");
-        IN.API.Raw("/people/~/recommendations-received").result(function(result) {
-            for(var key in result.values) {
-                var reco = result.values[key];
-                recos_element.append($('<p><i><b>' + reco.recommender.firstName + ' ' + reco.recommender.lastName + '</b> says,</i><br>&nbsp;&nbsp;&nbsp;' + reco.recommendationText + '</p>'));
-            }
-        });
-    })();
+    //  (function authSuccess() {
+    //     var recos_element = $("#recos");
+    //     IN.API.Raw("/people/~/recommendations-received").result(function(result) {
+    //         for(var key in result.values) {
+    //             var reco = result.values[key];
+    //             recos_element.append($('<p><i><b>' + reco.recommender.firstName + ' ' + reco.recommender.lastName + '</b> says,</i><br>&nbsp;&nbsp;&nbsp;' + reco.recommendationText + '</p>'));
+    //         }
+    //     });
+    // })();
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -369,7 +369,7 @@
         ssLightbox();
         ssAlertBoxes();
         ssMoveTo();
-        authSuccess();
+        // authSuccess();
 
     })();
 
