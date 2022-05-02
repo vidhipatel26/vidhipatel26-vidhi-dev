@@ -4214,6 +4214,20 @@ img.u-pull-left {
     fill : white;
 }
 
+.column.lg-6.md-12.about-info__pic-block {
+    position: relative;
+}
+
+.column.lg-6.md-12.about-info__pic-block:after {
+    position: absolute;
+    content: "";
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * footer
